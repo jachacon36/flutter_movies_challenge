@@ -1,14 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_movies_challenge/core/routing/app_router.dart';
 import 'package:flutter_movies_challenge/core/routing/navigation_service.dart';
 import 'package:flutter_movies_challenge/core/routing/route_names.dart';
 import 'package:flutter_movies_challenge/core/theme/app_theme.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: '.env');
+
   final appRouter = AppRouter()..configureRoutes();
   final navigationService = NavigationService();
   runApp(
-    MoviesApp(appRouter: appRouter, navigationService: navigationService),
+    ProviderScope(
+      child: MoviesApp(
+        appRouter: appRouter,
+        navigationService: navigationService,
+      ),
+    ),
   );
 }
 
