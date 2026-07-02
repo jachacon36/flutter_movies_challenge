@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:flutter_movies_challenge/core/routing/route_names.dart';
 import 'package:flutter_movies_challenge/features/media/domain/entities/media_category.dart';
 import 'package:flutter_movies_challenge/features/media/domain/entities/media_type.dart';
+import 'package:flutter_movies_challenge/features/media/presentation/providers/media_providers.dart';
 import 'package:flutter_movies_challenge/features/media/presentation/widgets/media_grid.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -16,6 +18,14 @@ class HomeScreen extends HookConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Flutter Movies Challenge'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.search),
+            onPressed: () => ref
+                .read(navigationServiceProvider)
+                .pushNamed(RouteNames.search),
+          ),
+        ],
         bottom: TabBar(
           controller: tabController,
           tabs: const [
