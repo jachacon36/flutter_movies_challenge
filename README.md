@@ -88,11 +88,10 @@ Scope decisions made deliberately, given the exercise's time budget:
 
 ## AI usage disclosure
 
-This project was built with heavy assistance from [Claude Code](https://claude.com/claude-code) (Anthropic's CLI coding agent), used as a pair-programming tool through the whole exercise:
+I built this with [Claude Code](https://claude.com/claude-code) as my pair programmer for the whole exercise, given the time budget. Before any code was written, we worked out a full implementation plan together — architecture, task breakdown, GitFlow structure — and I approved it first.
 
-- **Implementation**: every layer (domain entities/use cases, data models and TMDB response mapping, network client, Riverpod state, UI screens/widgets) was written by Claude Code under my direction, task by task, following a plan we defined together before writing any code.
-- **Tests**: unit, widget, and the fixture-based data-layer tests were written by Claude Code, including capturing real TMDB API fixtures for the data-layer tests instead of writing them from memory.
-- **Process**: the GitFlow branch/PR workflow itself — branch creation, commit messages, PR descriptions — was executed by Claude Code, but I reviewed and merged each pull request task by task rather than accepting one large unreviewed change. All commits carry my own git identity and the PRs were opened under my own GitHub account, so the history reflects work I reviewed and approved at each step, not an unreviewed AI dump.
-- **Decisions**: I directed the architecture choices (Clean Architecture layout, `fluro` for routing per the exercise's recommendation, `Result`/`Failure` error handling instead of a functional package, the generic `media` feature scope) and made the calls on trade-offs described in "What's left" above.
+From there, Claude wrote essentially all of the code: the domain layer, the TMDB data mapping, the network client, the Riverpod state management, the UI, and the tests, including capturing real TMDB API fixtures instead of writing them from memory. It also did the mechanical GitFlow work — branching, commits, PR descriptions.
 
-<!-- TODO(Armando): review and adjust this section before the release PR — it should describe your actual review process in your own words. -->
+What I did throughout was review and gate every step. Each task landed as its own PR; I read the diff, ran the app, and merged it myself before the next task started, so nothing went in as one big unreviewed dump. The commits are under my own git identity and the PRs are on my own GitHub account, so the history is real — Claude did most of the typing, but under my direction and review at every step.
+
+I'm disclosing this plainly because it's a more honest picture of how I actually work with AI tools than pretending otherwise, and because the exercise asked for it explicitly.
