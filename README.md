@@ -1,5 +1,7 @@
 # Flutter Movies Challenge
 
+![CI](https://github.com/jachacon36/flutter_movies_challenge/actions/workflows/ci.yaml/badge.svg)
+
 A Movies/TV Shows browsing app built with Flutter, consuming [The Movie Database (TMDB)](https://developers.themoviedb.org/3) API. Built as a technical exercise following Clean Architecture, SOLID principles, and a feature-first module structure.
 
 ## Features
@@ -23,7 +25,7 @@ The project follows Clean Architecture with a feature-first layout:
 
 ```
 lib/
-  core/          shared network client, error handling, theme, routing, utils
+  core/          shared network client, error handling, theme, routing, utils, reusable widgets
   features/
     media/
       domain/        entities, repository interfaces, use cases
@@ -72,8 +74,24 @@ This repository follows **GitFlow**:
 
 ## What's left / known limitations
 
-This section will be updated as the project progresses. See the final entry before the `release/1.0.0` tag for the complete list of what was and wasn't completed.
+Scope decisions made deliberately, given the exercise's time budget:
+
+- **Single generic `media` feature** parameterized by `MediaType {movie, tv}` instead of separate `movies`/`tv` modules — more defensible given the time budget, and the domain/data/presentation split still replicates cleanly for a future feature.
+- **`MediaDetail` is intentionally trimmed**: fields like `production_companies`, `budget`, `revenue`, `created_by`, full `seasons` detail, and cast/crew are not modeled in the domain entity — TMDB returns them, but the UI doesn't need them for this exercise.
+- **List cards don't show genre names** — TMDB's list endpoints only return `genre_ids`, and resolving them to names needs a separate `/genre/movie/list` / `/genre/tv/list` call. Genre chips only appear on the detail screen, which returns full `{id, name}` objects.
+- **No offline caching or persistence** — every screen re-fetches from the network; there's no local database or disk cache.
+- **No pull-to-refresh** — recovering from an error is a manual "Retry" button (`ErrorView`) that invalidates the relevant provider; no automatic retry/backoff.
+- **Theme follows the system only** — no manual light/dark toggle in the UI.
+- **No accessibility audit or golden/screenshot tests** — widget tests cover behavior (rendering, pagination, navigation, debounce), not visual regression or a11y semantics beyond Flutter's defaults.
+- **English only** — no localization/i18n.
+- **Image loading is bare `Image.network`** — no disk/memory cache package (e.g. `cached_network_image`); posters/backdrops re-fetch on scroll-back.
 
 ## AI usage disclosure
 
-This project was built with the assistance of Claude Code (Anthropic). This section will be filled in with specifics as development progresses, describing exactly which parts were AI-assisted and how.
+I built this with [Claude Code](https://claude.com/claude-code) as my pair programmer for the whole exercise, given the time budget. Before any code was written, we worked out a full implementation plan together — architecture, task breakdown, GitFlow structure — and I approved it first.
+
+From there, Claude wrote essentially all of the code: the domain layer, the TMDB data mapping, the network client, the Riverpod state management, the UI, and the tests, including capturing real TMDB API fixtures instead of writing them from memory. It also did the mechanical GitFlow work — branching, commits, PR descriptions.
+
+What I did throughout was review and gate every step. Each task landed as its own PR; I read the diff, ran the app, and merged it myself before the next task started, so nothing went in as one big unreviewed dump. The commits are under my own git identity and the PRs are on my own GitHub account, so the history is real — Claude did most of the typing, but under my direction and review at every step.
+
+I'm disclosing this plainly because it's a more honest picture of how I actually work with AI tools than pretending otherwise, and because the exercise asked for it explicitly.
