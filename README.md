@@ -1,5 +1,7 @@
 # Flutter Movies Challenge
 
+![CI](https://github.com/jachacon36/flutter_movies_challenge/actions/workflows/ci.yaml/badge.svg)
+
 A Movies/TV Shows browsing app built with Flutter, consuming [The Movie Database (TMDB)](https://developers.themoviedb.org/3) API. Built as a technical exercise following Clean Architecture, SOLID principles, and a feature-first module structure.
 
 ## Features
@@ -23,7 +25,7 @@ The project follows Clean Architecture with a feature-first layout:
 
 ```
 lib/
-  core/          shared network client, error handling, theme, routing, utils
+  core/          shared network client, error handling, theme, routing, utils, reusable widgets
   features/
     media/
       domain/        entities, repository interfaces, use cases
@@ -72,8 +74,25 @@ This repository follows **GitFlow**:
 
 ## What's left / known limitations
 
-This section will be updated as the project progresses. See the final entry before the `release/1.0.0` tag for the complete list of what was and wasn't completed.
+Scope decisions made deliberately, given the exercise's time budget:
+
+- **Single generic `media` feature** parameterized by `MediaType {movie, tv}` instead of separate `movies`/`tv` modules — more defensible given the time budget, and the domain/data/presentation split still replicates cleanly for a future feature.
+- **`MediaDetail` is intentionally trimmed**: fields like `production_companies`, `budget`, `revenue`, `created_by`, full `seasons` detail, and cast/crew are not modeled in the domain entity — TMDB returns them, but the UI doesn't need them for this exercise.
+- **List cards don't show genre names** — TMDB's list endpoints only return `genre_ids`, and resolving them to names needs a separate `/genre/movie/list` / `/genre/tv/list` call. Genre chips only appear on the detail screen, which returns full `{id, name}` objects.
+- **No offline caching or persistence** — every screen re-fetches from the network; there's no local database or disk cache.
+- **No pull-to-refresh** — recovering from an error is a manual "Retry" button (`ErrorView`) that invalidates the relevant provider; no automatic retry/backoff.
+- **Theme follows the system only** — no manual light/dark toggle in the UI.
+- **No accessibility audit or golden/screenshot tests** — widget tests cover behavior (rendering, pagination, navigation, debounce), not visual regression or a11y semantics beyond Flutter's defaults.
+- **English only** — no localization/i18n.
+- **Image loading is bare `Image.network`** — no disk/memory cache package (e.g. `cached_network_image`); posters/backdrops re-fetch on scroll-back.
 
 ## AI usage disclosure
 
-This project was built with the assistance of Claude Code (Anthropic). This section will be filled in with specifics as development progresses, describing exactly which parts were AI-assisted and how.
+This project was built with heavy assistance from [Claude Code](https://claude.com/claude-code) (Anthropic's CLI coding agent), used as a pair-programming tool through the whole exercise:
+
+- **Implementation**: every layer (domain entities/use cases, data models and TMDB response mapping, network client, Riverpod state, UI screens/widgets) was written by Claude Code under my direction, task by task, following a plan we defined together before writing any code.
+- **Tests**: unit, widget, and the fixture-based data-layer tests were written by Claude Code, including capturing real TMDB API fixtures for the data-layer tests instead of writing them from memory.
+- **Process**: the GitFlow branch/PR workflow itself — branch creation, commit messages, PR descriptions — was executed by Claude Code, but I reviewed and merged each pull request task by task rather than accepting one large unreviewed change. All commits carry my own git identity and the PRs were opened under my own GitHub account, so the history reflects work I reviewed and approved at each step, not an unreviewed AI dump.
+- **Decisions**: I directed the architecture choices (Clean Architecture layout, `fluro` for routing per the exercise's recommendation, `Result`/`Failure` error handling instead of a functional package, the generic `media` feature scope) and made the calls on trade-offs described in "What's left" above.
+
+<!-- TODO(Armando): review and adjust this section before the release PR — it should describe your actual review process in your own words. -->

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_movies_challenge/core/error/failure.dart';
+import 'package:flutter_movies_challenge/core/widgets/empty_view.dart';
+import 'package:flutter_movies_challenge/core/widgets/error_view.dart';
+import 'package:flutter_movies_challenge/core/widgets/loading_view.dart';
 import 'package:flutter_movies_challenge/features/media/domain/entities/media_type.dart';
 import 'package:flutter_movies_challenge/features/media/presentation/navigation/media_navigation.dart';
 import 'package:flutter_movies_challenge/features/media/presentation/providers/media_providers.dart';
@@ -47,11 +50,11 @@ class SearchScreen extends HookConsumerWidget {
           Expanded(
             child: state.when(
               data: (data) => _SearchResults(data: data),
-              loading: () => const Center(child: CircularProgressIndicator()),
-              error: (error, stackTrace) => Center(
-                child: Text(
-                  error is Failure ? error.message : 'Something went wrong.',
-                ),
+              loading: () => const LoadingView(),
+              error: (error, stackTrace) => ErrorView(
+                message: error is Failure
+                    ? error.message
+                    : 'Something went wrong.',
               ),
             ),
           ),
@@ -69,10 +72,13 @@ class _SearchResults extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     if (data.query.trim().isEmpty) {
-      return const Center(child: Text('Search for a movie or TV show.'));
+      return const EmptyView(
+        message: 'Search for a movie or TV show.',
+        icon: Icons.search,
+      );
     }
     if (data.items.isEmpty) {
-      return const Center(child: Text('No results found.'));
+      return const EmptyView(message: 'No results found.');
     }
     return PaginatedMediaGrid(
       items: data.items,

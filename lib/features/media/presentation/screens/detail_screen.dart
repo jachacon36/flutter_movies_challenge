@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_movies_challenge/core/error/failure.dart';
 import 'package:flutter_movies_challenge/core/utils/image_url_builder.dart';
+import 'package:flutter_movies_challenge/core/widgets/error_view.dart';
+import 'package:flutter_movies_challenge/core/widgets/loading_view.dart';
 import 'package:flutter_movies_challenge/features/media/domain/entities/media_detail.dart';
 import 'package:flutter_movies_challenge/features/media/presentation/providers/media_detail_key.dart';
 import 'package:flutter_movies_challenge/features/media/presentation/providers/media_detail_provider.dart';
@@ -18,11 +20,10 @@ class DetailScreen extends ConsumerWidget {
     return Scaffold(
       body: detail.when(
         data: (media) => _DetailBody(media: media),
-        loading: () => const Center(child: CircularProgressIndicator()),
-        error: (error, stackTrace) => Center(
-          child: Text(
-            error is Failure ? error.message : 'Something went wrong.',
-          ),
+        loading: () => const LoadingView(),
+        error: (error, stackTrace) => ErrorView(
+          message: error is Failure ? error.message : 'Something went wrong.',
+          onRetry: () => ref.invalidate(mediaDetailProvider(mediaKey)),
         ),
       ),
     );
