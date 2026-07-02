@@ -1,0 +1,451 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/m7eiSGHFzr584zFmetGqkqaU6BN.jpg",
+      "genre_ids": [
+        9648,
+        18,
+        10765
+      ],
+      "id": 124364,
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "FROM",
+      "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
+      "popularity": 765.3461,
+      "poster_path": "/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
+      "first_air_date": "2022-02-20",
+      "softcore": false,
+      "name": "FROM",
+      "vote_average": 8.506,
+      "vote_count": 3875
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
+      "genre_ids": [
+        10765,
+        18,
+        10759
+      ],
+      "id": 94997,
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "House of the Dragon",
+      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
+      "popularity": 494.1472,
+      "poster_path": "/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
+      "first_air_date": "2022-08-21",
+      "softcore": false,
+      "name": "House of the Dragon",
+      "vote_average": 8.356,
+      "vote_count": 6414
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/pptMFFYI3Rs15I8HovmJTrnTM8L.jpg",
+      "genre_ids": [],
+      "id": 4304,
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Xplay",
+      "overview": "Xplay (previously GameSpot TV and Extended Play) is a TV program about video games. The program, known for its reviews and comedy skits, airs on G4 in the United States and had aired on G4 Canada in Canada (and briefly on YTV during its time as GameSpot TV), FUEL TV in Australia, Ego in Israel, GXT in Italy, MTV Russia & Rambler TV in Russia, Solar Sports in the Philippines and Adult Swim and MuchMusic in Latin America. The show ran between July 4, 1998, and January 23, 2013, and returned in November 2021 as a part of G4's relaunch.",
+      "popularity": 400.4115,
+      "poster_path": "/7ynD7g4U9hOODu1Jzf6VN4zQc6a.jpg",
+      "first_air_date": "2003-04-28",
+      "softcore": false,
+      "name": "Xplay",
+      "vote_average": 8.0,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bM4nCynOSA5oCNqLsqb1Fo56sZQ.jpg",
+      "genre_ids": [
+        16
+      ],
+      "id": 241002,
+      "origin_country": [
+        "JP"
+      ],
+      "original_language": "ja",
+      "original_name": "悶えてよ、アダムくん",
+      "overview": "This is the story of a boy, who became the lone Adam among four billion Eves. In a world where a pandemic has rendered all men impotent, high school student Itsuki is the exception who escaped it. In order to protect this secret, he transfers to a very special high school, which turns out to be composed of 90% girls! There, he encounters an upbeat and friendly senior, a sexually frustrated female teacher, a tomboyish school 'prince,' and an heiress from a wealthy family. For Itsuki, who has his pick of any woman in the world, the question remains: which one will he choose?",
+      "popularity": 311.8869,
+      "poster_path": "/1n1ZP0KHXUSvVxZG63x7aOzmO4M.jpg",
+      "first_air_date": "2024-01-08",
+      "softcore": false,
+      "name": "Adam's Sweet Agony",
+      "vote_average": 6.786,
+      "vote_count": 35
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xUB3xFMgsHgPmdWnUWkHTJ03vHa.jpg",
+      "genre_ids": [
+        10759,
+        10765,
+        18,
+        10751
+      ],
+      "id": 82452,
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Avatar: The Last Airbender",
+      "overview": "A young boy known as the Avatar must master the four elemental powers to save a world at war — and fight a ruthless enemy bent on stopping him.",
+      "popularity": 286.8657,
+      "poster_path": "/lzZpWEaqzP0qVA5nkCc5ASbNcSy.jpg",
+      "first_air_date": "2024-02-22",
+      "softcore": false,
+      "name": "Avatar: The Last Airbender",
+      "vote_average": 7.801,
+      "vote_count": 1180
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/obtdxPgmfykYwVnvuYXC5f2xKlQ.jpg",
+      "genre_ids": [
+        80,
+        18,
+        9648
+      ],
+      "id": 2734,
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Law & Order: Special Victims Unit",
+      "overview": "In the criminal justice system, sexually-based offenses are considered especially heinous. In New York City, the dedicated detectives who investigate these vicious felonies are members of an elite squad known as the Special Victims Unit. These are their stories.",
+      "popularity": 285.3782,
+      "poster_path": "/iofokHZoUB4Qhik4PflvJl8TT6a.jpg",
+      "first_air_date": "1999-09-20",
+      "softcore": false,
+      "name": "Law & Order: Special Victims Unit",
+      "vote_average": 7.95,
+      "vote_count": 4263
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zq22918LdWTkBstphgUfxDZUO7i.jpg",
+      "genre_ids": [
+        18,
+        10765
+      ],
+      "id": 303493,
+      "origin_country": [
+        "TH"
+      ],
+      "original_language": "th",
+      "original_name": "ซีรีส์",
+      "overview": "A young man’s life changes forever when a powerful Alpha marks him, binding their fates together in an inescapable bond.",
+      "popularity": 281.4824,
+      "poster_path": "/8z62pp4K602d1y6079oU1GBeiAG.jpg",
+      "first_air_date": "2026-06-30",
+      "softcore": false,
+      "name": "Knot",
+      "vote_average": 7.667,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/52sp0vPhLOWrZ1QoZIWiapronM.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 273240,
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Off Campus",
+      "overview": "Hannah Wells tutors hockey captain Garrett Graham to win over her crush. Their deal becomes real connection as they face their pasts. Friends Logan, Dean, Tucker, and Allie navigate college life and love.",
+      "popularity": 262.9005,
+      "poster_path": "/cbODFqkcmRgrYH8NkG4Q4Hcg8Z1.jpg",
+      "first_air_date": "2026-05-13",
+      "softcore": false,
+      "name": "Off Campus",
+      "vote_average": 8.968,
+      "vote_count": 603
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6iNWfGVCEfASDdlNb05TP5nG0ll.jpg",
+      "genre_ids": [
+        80,
+        18,
+        35
+      ],
+      "id": 79744,
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Rookie",
+      "overview": "Starting over isn't easy, especially for small-town guy John Nolan who, after a life-altering incident, is pursuing his dream of being an LAPD officer. As the force's oldest rookie, he's met with skepticism from some higher-ups who see him as just a walking midlife crisis.",
+      "popularity": 230.104,
+      "poster_path": "/70kTz0OmjjZe7zHvIDrq2iKW7PJ.jpg",
+      "first_air_date": "2018-10-16",
+      "softcore": false,
+      "name": "The Rookie",
+      "vote_average": 8.552,
+      "vote_count": 3347
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
+      "genre_ids": [
+        10759,
+        80,
+        18
+      ],
+      "id": 296206,
+      "origin_country": [
+        "KR"
+      ],
+      "original_language": "ko",
+      "original_name": "김부장",
+      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
+      "popularity": 224.5247,
+      "poster_path": "/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
+      "first_air_date": "2026-06-26",
+      "softcore": false,
+      "name": "Agent Kim Reactivated",
+      "vote_average": 8.2,
+      "vote_count": 13
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ro0tlgnsco4SwbdAgmscLkSlMSL.jpg",
+      "genre_ids": [
+        18,
+        9648,
+        10765
+      ],
+      "id": 1622,
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Supernatural",
+      "overview": "When they were boys, Sam and Dean Winchester lost their mother to a mysterious and demonic supernatural force. Subsequently, their father raised them to be soldiers. He taught them about the paranormal evil that lives in the dark corners and on the back roads of America ... and he taught them how to kill it. Now, the Winchester brothers crisscross the country in their '67 Chevy Impala, battling every kind of supernatural threat they encounter along the way. ",
+      "popularity": 219.0527,
+      "poster_path": "/8iixmfGx5EIFPdpNvB2JvI3VIqX.jpg",
+      "first_air_date": "2005-09-13",
+      "softcore": false,
+      "name": "Supernatural",
+      "vote_average": 8.311,
+      "vote_count": 8501
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/n6vVs6z8obNbExdD3QHTr4Utu1Z.jpg",
+      "genre_ids": [
+        10765,
+        10759
+      ],
+      "id": 76479,
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Boys",
+      "overview": "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
+      "popularity": 216.8543,
+      "poster_path": "/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+      "first_air_date": "2019-07-25",
+      "softcore": false,
+      "name": "The Boys",
+      "vote_average": 8.448,
+      "vote_count": 13024
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
+      "genre_ids": [
+        37,
+        18
+      ],
+      "id": 299167,
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Dutton Ranch",
+      "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
+      "popularity": 213.0244,
+      "poster_path": "/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
+      "first_air_date": "2026-05-15",
+      "softcore": false,
+      "name": "Dutton Ranch",
+      "vote_average": 9.3,
+      "vote_count": 339
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jP0Rhj9OTPDAwQlHQwOLFDdeE8t.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1416,
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Grey's Anatomy",
+      "overview": "Follows the personal and professional lives of a group of doctors at Seattle's Grey Sloan Memorial Hospital.",
+      "popularity": 213.0097,
+      "poster_path": "/hjJkrLXhWvGHpLeLBDFznpBTY1S.jpg",
+      "first_air_date": "2005-03-27",
+      "softcore": false,
+      "name": "Grey's Anatomy",
+      "vote_average": 8.21,
+      "vote_count": 10948
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tc7canPSAn2X14hYi6Rl3gZm1o4.jpg",
+      "genre_ids": [
+        80,
+        18
+      ],
+      "id": 549,
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Law & Order",
+      "overview": "In cases ripped from the headlines, police investigate serious and often deadly crimes, weighing the evidence and questioning the suspects until someone is taken into custody. The district attorney's office then builds a case to convict the perpetrator by proving the person guilty beyond a reasonable doubt. Working together, these expert teams navigate all sides of the complex criminal justice system to make New York a safer place.",
+      "popularity": 209.9667,
+      "poster_path": "/haJ9eHytVO3H3JooMJG1DiWwDNm.jpg",
+      "first_air_date": "1990-09-13",
+      "softcore": false,
+      "name": "Law & Order",
+      "vote_average": 7.3,
+      "vote_count": 693
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2OMB0ynKlyIenMJWI2Dy9IWT4c.jpg",
+      "genre_ids": [
+        10765,
+        18,
+        10759
+      ],
+      "id": 1399,
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Game of Thrones",
+      "overview": "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
+      "popularity": 207.6338,
+      "poster_path": "/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
+      "first_air_date": "2011-04-17",
+      "softcore": false,
+      "name": "Game of Thrones",
+      "vote_average": 8.464,
+      "vote_count": 27139
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/q3pCsNvJ7CmdJUz2sJEEUY3pOPC.jpg",
+      "genre_ids": [
+        80,
+        18,
+        9648
+      ],
+      "id": 5920,
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Mentalist",
+      "overview": "Patrick Jane, a former celebrity psychic medium, uses his razor sharp skills of observation and expertise at \"reading\" people to solve serious crimes with the California Bureau of Investigation.",
+      "popularity": 206.0103,
+      "poster_path": "/acYXu4KaDj1NIkMgObnhe4C4a0T.jpg",
+      "first_air_date": "2008-09-23",
+      "softcore": false,
+      "name": "The Mentalist",
+      "vote_average": 8.357,
+      "vote_count": 4375
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oBJ6dZ6A1tY1O94RmWnJkkQVbLz.jpg",
+      "genre_ids": [
+        9648,
+        18
+      ],
+      "id": 286360,
+      "origin_country": [
+        "KR"
+      ],
+      "original_language": "ko",
+      "original_name": "맨 끝줄 소년",
+      "overview": "A literature professor discovers a student's talent and offers him writing lessons — but as he sinks into the story, their sessions spiral into chaos.",
+      "popularity": 205.4955,
+      "poster_path": "/paRFCxAJRZOypfgnzYLo6KH5jjO.jpg",
+      "first_air_date": "2026-06-26",
+      "softcore": false,
+      "name": "Notes from the Last Row",
+      "vote_average": 8.471,
+      "vote_count": 17
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nn3SuLTO4hum8yAxaY4ql8h6kRk.jpg",
+      "genre_ids": [
+        80,
+        18,
+        10759
+      ],
+      "id": 4614,
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "NCIS",
+      "overview": "From murder and espionage to terrorism and stolen submarines, a team of special agents investigates any crime that has any connection to Navy and Marine Corps personnel, regardless of rank or position.",
+      "popularity": 205.3894,
+      "poster_path": "/mBcu8d6x6zB1el3MPNl7cZQEQ31.jpg",
+      "first_air_date": "2003-09-23",
+      "softcore": false,
+      "name": "NCIS",
+      "vote_average": 7.618,
+      "vote_count": 2523
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/80vo7eYhAXPJltu32lG5JGrGPzG.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 288603,
+      "origin_country": [
+        "CN"
+      ],
+      "original_language": "zh",
+      "original_name": "炽夏",
+      "overview": "To save her gravely ill grandmother, top student Zhou Wan approaches her mother's stepson, Lu Xixiao, for funds. They fall for each other over the summer after graduation but are torn apart by misunderstandings in reality. Ten years later, they reunite at work. Though Lu Xixiao harbors resentment, his love for Zhou Wan remains. As they uncover the truth behind a \"factory accident,\" they resolve their differences and reunite.",
+      "popularity": 203.4975,
+      "poster_path": "/2b4rQPbFY8BnL9xuQKaT3ZELlqx.jpg",
+      "first_air_date": "2026-06-16",
+      "softcore": false,
+      "name": "Never-Ending Summer",
+      "vote_average": 9.0,
+      "vote_count": 2
+    }
+  ],
+  "total_pages": 11276,
+  "total_results": 225506
+}
