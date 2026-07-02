@@ -4,16 +4,20 @@ import 'package:flutter_movies_challenge/core/routing/app_router.dart';
 import 'package:flutter_movies_challenge/core/routing/navigation_service.dart';
 import 'package:flutter_movies_challenge/core/routing/route_names.dart';
 import 'package:flutter_movies_challenge/core/theme/app_theme.dart';
+import 'package:flutter_movies_challenge/features/media/presentation/providers/media_providers.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: '.env');
 
+  final container = ProviderContainer();
   final appRouter = AppRouter()..configureRoutes();
-  final navigationService = NavigationService();
+  final navigationService = container.read(navigationServiceProvider);
+
   runApp(
-    ProviderScope(
+    UncontrolledProviderScope(
+      container: container,
       child: MoviesApp(
         appRouter: appRouter,
         navigationService: navigationService,

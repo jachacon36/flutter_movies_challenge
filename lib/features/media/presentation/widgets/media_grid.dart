@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_movies_challenge/core/error/failure.dart';
+import 'package:flutter_movies_challenge/features/media/presentation/navigation/media_navigation.dart';
 import 'package:flutter_movies_challenge/features/media/presentation/providers/media_list_key.dart';
 import 'package:flutter_movies_challenge/features/media/presentation/providers/media_list_notifier.dart';
 import 'package:flutter_movies_challenge/features/media/presentation/providers/media_list_state.dart';
+import 'package:flutter_movies_challenge/features/media/presentation/providers/media_providers.dart';
 import 'package:flutter_movies_challenge/features/media/presentation/widgets/media_card.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -54,7 +56,15 @@ class _MediaGridView extends ConsumerWidget {
           mainAxisSpacing: 8,
         ),
         itemCount: data.items.length,
-        itemBuilder: (context, index) => MediaCard(media: data.items[index]),
+        itemBuilder: (context, index) {
+          final media = data.items[index];
+          return MediaCard(
+            media: media,
+            onTap: () => ref
+                .read(navigationServiceProvider)
+                .pushNamed(mediaDetailPath(type: media.type, id: media.id)),
+          );
+        },
       ),
     );
   }
