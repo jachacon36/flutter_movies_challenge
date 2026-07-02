@@ -10,6 +10,7 @@ class AppRouter {
 
   void configureRoutes() {
     _router.define(RouteNames.home, handler: homeHandler);
+    _router.define(RouteNames.search, handler: searchHandler);
     _router.define(RouteNames.mediaDetail, handler: mediaDetailHandler);
   }
 

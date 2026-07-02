@@ -6,6 +6,7 @@ import 'package:flutter_movies_challenge/features/media/data/repositories/media_
 import 'package:flutter_movies_challenge/features/media/domain/repositories/media_repository.dart';
 import 'package:flutter_movies_challenge/features/media/domain/usecases/get_media_detail.dart';
 import 'package:flutter_movies_challenge/features/media/domain/usecases/get_media_list.dart';
+import 'package:flutter_movies_challenge/features/media/domain/usecases/search_media.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 final navigationServiceProvider = Provider<NavigationService>((ref) {
@@ -32,4 +33,8 @@ final getMediaListProvider = Provider<GetMediaList>((ref) {
 
 final getMediaDetailProvider = Provider<GetMediaDetail>((ref) {
   return GetMediaDetail(ref.watch(mediaRepositoryProvider));
+});
+
+final searchMediaProvider = Provider<SearchMedia>((ref) {
+  return SearchMedia(ref.watch(mediaRepositoryProvider));
 });
