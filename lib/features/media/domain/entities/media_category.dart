@@ -1,0 +1,1 @@
+enum MediaCategory { popular, topRated }
