@@ -1,10 +1,16 @@
 import 'package:flutter_movies_challenge/core/config/env_config.dart';
 import 'package:flutter_movies_challenge/core/network/dio_client.dart';
+import 'package:flutter_movies_challenge/core/routing/navigation_service.dart';
 import 'package:flutter_movies_challenge/features/media/data/datasources/media_remote_data_source.dart';
 import 'package:flutter_movies_challenge/features/media/data/repositories/media_repository_impl.dart';
 import 'package:flutter_movies_challenge/features/media/domain/repositories/media_repository.dart';
+import 'package:flutter_movies_challenge/features/media/domain/usecases/get_media_detail.dart';
 import 'package:flutter_movies_challenge/features/media/domain/usecases/get_media_list.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+
+final navigationServiceProvider = Provider<NavigationService>((ref) {
+  return NavigationService();
+});
 
 final envConfigProvider = Provider<EnvConfig>((ref) => EnvConfig());
 
@@ -22,4 +28,8 @@ final mediaRepositoryProvider = Provider<MediaRepository>((ref) {
 
 final getMediaListProvider = Provider<GetMediaList>((ref) {
   return GetMediaList(ref.watch(mediaRepositoryProvider));
+});
+
+final getMediaDetailProvider = Provider<GetMediaDetail>((ref) {
+  return GetMediaDetail(ref.watch(mediaRepositoryProvider));
 });
