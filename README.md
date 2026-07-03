@@ -95,3 +95,10 @@ From there, Claude wrote essentially all of the code: the domain layer, the TMDB
 What I did throughout was review and gate every step. Each task landed as its own PR; I read the diff, ran the app, and merged it myself before the next task started, so nothing went in as one big unreviewed dump. The commits are under my own git identity and the PRs are on my own GitHub account, so the history is real — Claude did most of the typing, but under my direction and review at every step.
 
 I'm disclosing this plainly because it's a more honest picture of how I actually work with AI tools than pretending otherwise, and because the exercise asked for it explicitly.
+
+<img width="320" height="711" alt="untitled-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/5c16638f-c28d-4d98-bbcf-e2cc26dc4e98" />
+<img width="1080" height="2400" alt="Screenshot_1783093658" src="https://github.com/user-attachments/assets/7a9a70ea-5f40-405f-95e7-a2c1421c1750" />
+<img width="1080" height="2400" alt="Screenshot_1783093665" src="https://github.com/user-attachments/assets/60cd71da-5bff-40cd-bfa8-7c8f93efded7" />
+<img width="1080" height="2400" alt="Screenshot_1783093669" src="https://github.com/user-attachments/assets/05cd3981-9400-47c1-a361-445589214eb3" />
+<img width="1080" height="2400" alt="Screenshot_1783093678" src="https://github.com/user-attachments/assets/374e89c6-3342-4af5-a439-98947489968a" />
+
